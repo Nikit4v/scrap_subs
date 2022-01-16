@@ -6,7 +6,7 @@ import sys
 from tqdm import tqdm
 
 working_path = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else pathlib.Path(".")
-ffmpeg_path = sys.argv[2] if len(sys.argv) > 1 else "ffmpeg"
+ffmpeg_path = sys.argv[2] if len(sys.argv) > 2 else "ffmpeg"
 
 
 processes = []
